@@ -257,14 +257,10 @@ function initReducer(state, action) {
   return state
 }
 
-const reducer = combineReducers({
+export default combineReducers({
   initReducer,
   rankList: rankListReducer,
   activeRank: activeRankReducer,
   history: histroyReducer,
   timer: timerReducer
 })
-setTimeout(()=>{
-  console.log('extend');
-  extendReducer(REDUCER_EXTENSION_KEY, reducer)
-}, 0)

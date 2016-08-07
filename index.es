@@ -34,3 +34,5 @@ export const reactClass = (class SenkaCalc extends Component {
     )
   }
 })
+
+export reducer from './redux'
